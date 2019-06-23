@@ -9,7 +9,7 @@ module.exports = merge.smart(webpackCommon, {
 	output: {
 		filename: '[name].[chunkhash].js',
 		path: path.resolve(__dirname, '../build'),
-		publicPath: '/'
+		publicPath: '/react-redux-magazine/'
 	},
 	mode: 'production',
 	optimization: {

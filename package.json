@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config=config/webpack.dev.js",
-    "build": "SET NODE_ENV=production webpack --config=config/webpack.prod.js",
+    "build": "cross-env NODE_ENV=production webpack --config=config/webpack.prod.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -26,6 +26,7 @@
     "circular-dependency-plugin": "^5.0.2",
     "clean-webpack-plugin": "^2.0.0",
     "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
     "gh-pages": "^2.0.1",
